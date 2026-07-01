@@ -2,10 +2,9 @@
 const titleInput = document.getElementById("title");
 const authorInput = document.getElementById("author");
 const hasRead = document.getElementById("hasRead");
-
 const addBookButton = document.getElementById("addBookButton");
-const booksContainer = document.getElementById("booksContainer");
 
+const booksContainer = document.getElementById("booksContainer");
 const deleteButton = document.getElementsByClassName("deleteButton");
 
 
@@ -25,7 +24,6 @@ function addBookToLibrary(title, author, hasRead) {
     bookLibrary.push(newBook);
 };
 
-addBookToLibrary("Adventures", "Charles", "Read");
 
 //ADDS BOOK TO LIBRARY
 addBookButton.addEventListener('click', function(event) {
